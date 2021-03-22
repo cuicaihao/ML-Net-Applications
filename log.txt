@@ -1,0 +1,34 @@
+2021-03-19 09:16:09.1813 DEBUG Set log level to Info (Microsoft.ML.CLI.RunnerParameterBuilder.SetVerbosity)
+2021-03-19 09:16:09.2162 DEBUG bufferWidth: 120 (Microsoft.ML.CLI.Commands.MLCommand.ToRunnerParameterBuilder)
+2021-03-19 09:16:09.2348 DEBUG infer data properties... /Users/caihaocui/Documents/Developer/ML.Net/MLApp/yelp_labelled.txt (Microsoft.ML.CLI.SimpleDelimiterFileHelper.GetDataProperties)
+2021-03-19 09:16:10.4838 WARN Warning: A header has been detected in your dataset, but you have specified --has-header=false. If results are not as expected, please check --has-header option and try training again. (Microsoft.ML.CLI.RunnerParameterBuilder.SetHasHeader)
+2021-03-19 09:16:10.5187 INFO Start Training (Microsoft.ML.CLI.Runners.AutoMLRunner.Execute)
+2021-03-19 09:16:10.7287 INFO |     Trainer                              MicroAccuracy  MacroAccuracy  Duration #Iteration                     | (Microsoft.ML.CLI.Utilities.PBarConsolePrinter.Print)
+2021-03-19 09:16:13.7631 INFO |1    AveragedPerceptronOva                       0.8214         0.8227       2.8          1                     | (Microsoft.ML.CLI.Utilities.PBarConsolePrinter.Print)
+2021-03-19 09:16:18.3733 INFO |2    SdcaMaximumEntropyMulti                     0.7933         0.7943       4.6          2                     | (Microsoft.ML.CLI.Utilities.PBarConsolePrinter.Print)
+2021-03-19 09:16:26.5192 INFO |3    LightGbmMulti                               0.8003         0.8015       8.1          3                     | (Microsoft.ML.CLI.Utilities.PBarConsolePrinter.Print)
+2021-03-19 09:16:27.4949 INFO The type initializer for 'Native' threw an exception. (Microsoft.ML.CLI.Utilities.PBarConsolePrinter.Print)
+2021-03-19 09:16:30.7274 INFO 
+===============================================Experiment Results=================================================
+------------------------------------------------------------------------------------------------------------------
+|                                                     Summary                                                    |
+------------------------------------------------------------------------------------------------------------------
+|ML Task: multiclass-classification                                                                              |
+|Dataset: /Users/caihaocui/Documents/Developer/ML.Net/MLApp/yelp_labelled.txt                                    |
+|Label : col1                                                                                                    |
+|Total experiment time : 16.498414 Secs                                                                          |
+|Total number of models explored: 4                                                                              |
+------------------------------------------------------------------------------------------------------------------
+ (Microsoft.ML.CLI.Utilities.PBarConsolePrinter.Print)
+2021-03-19 09:16:30.7311 INFO |                                              Top 3 models explored                                             |
+------------------------------------------------------------------------------------------------------------------
+|     Trainer                              MicroAccuracy  MacroAccuracy  Duration #Iteration                     |
+|1    AveragedPerceptronOva                       0.8214         0.8227       2.8          1                     |
+|2    LightGbmMulti                               0.8003         0.8015       8.1          2                     |
+|3    SdcaMaximumEntropyMulti                     0.7933         0.7943       4.6          3                     |
+------------------------------------------------------------------------------------------------------------------
+ (Microsoft.ML.CLI.Utilities.PBarConsolePrinter.Print)
+2021-03-19 09:16:33.9298 INFO Code Generated (Microsoft.ML.CLI.Utilities.PBarConsolePrinter.Print)
+2021-03-19 09:16:33.9349 INFO Generated C# code for model consumption: /Users/caihaocui/Documents/Developer/ML.Net/MLApp/SampleClassification/SampleClassification.ConsoleApp (Microsoft.ML.CLI.Runners.AutoMLRunner.Execute)
+2021-03-19 09:16:33.9358 INFO Check out log file for more information: /Users/caihaocui/.mlnet/log.txt (Microsoft.ML.CLI.Program.Main)
+2021-03-19 09:16:33.9365 INFO Exiting ... (Microsoft.ML.CLI.Program.Main)
