@@ -3,6 +3,8 @@
 - by Chris Cui
 - created time: 22-Mar-2021
 
+![](ML.Net.jpg)
+
 ## Create your app
 In your terminal, run the following commands:
 
