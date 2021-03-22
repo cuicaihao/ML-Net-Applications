@@ -39,7 +39,7 @@ Each row in yelp_labelled.txt represents a different review of a restaurant left
 Now you'll train your model with the yelp_labelled.txt dataset.
 
 In your terminal, run the following command (in your myMLApp folder):
-```
+```bash
 mlnet classification --dataset "yelp_labelled.txt" --has-header false --label-col 1 --train-time 20
 ```
 
@@ -79,21 +79,21 @@ The ML.NET CLI has generated the trained model and code for you, so you can now 
 Copy the generated MLModel.zip file from the SampleClassification.Model folder to the consumeModelApp folder.
 In the command line, navigate to the consumeModelApp directory.
 Terminal
-```
+```bash
 cd consumeModelApp
 Add a reference to the generated class library that contains the trained model and consumption code (SampleClassification.Model) in your consumeModelApp project by running the following command:
 ```
 
 Terminal
 
-```
+```bash
 dotnet add reference "../SampleClassification/SampleClassification.Model/SampleClassification.Model.csproj"
 Open the consumeModelApp Program.cs in any code editor and replace the code with the following:
 ```
 
 Program.cs
 
-```
+```C#
 using System;
 using SampleClassification.Model;
 
